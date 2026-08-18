@@ -108,7 +108,7 @@ header.site-header {
   border: 1px solid transparent; cursor: pointer; transition: all .18s;
 }
 .btn-primary { background: var(--primary); color: #FFF; font-weight: 500; }
-.btn-primary:hover { background: var(--accent); }
+.btn-primary:hover { background: var(--text-main); }
 .btn-ghost { background: transparent; color: var(--text-main); border-color: var(--border-color); }
 .btn-ghost:hover { border-color: var(--accent); color: var(--accent); }
 .btn-amber { background: var(--accent); color: #FFF; }
