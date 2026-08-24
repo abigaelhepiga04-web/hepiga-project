@@ -11,31 +11,32 @@
 <body>
 
 <header class="site-header">
-  <nav class="nav">
-    <a href="#hero" class="brand">
-      <span class="mark">
-        <svg viewBox="0 0 32 32" fill="none">
-          <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="#0284C7" stroke-width="1.6"/>
-          <circle cx="16" cy="16" r="3.2" fill="#0284C7"/>
-        </svg>
-      </span>
-      <!-- <span>Hepiga<small>Technologies</small>Company</span> -->
-      <span class="brand-text">
-        Hepiga
-        <small>Technologies Company</small>
-      </span>
-    </a>
-    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
-      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M2 5h14M2 9h14M2 13h14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
-    </button>
-    <div class="nav-links">
-      <a href="#hero" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#careers">Careers</a>
-      <a href="#contact">Contact</a>
-      <a href="#inquiry" class="btn btn-primary">Start a Project</a>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container nav">
+      <a href="#hero" class="navbar-brand brand">
+        <span class="mark">
+          <svg viewBox="0 0 32 32" fill="none">
+            <path d="M16 2 L28 9 V23 L16 30 L4 23 V9 Z" stroke="#0284C7" stroke-width="1.6"/>
+            <circle cx="16" cy="16" r="3.2" fill="#0284C7"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          Hepiga
+          <small>Technologies Company</small>
+        </span>
+      </a>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <div class="nav-links">
+          <a href="#hero" class="active">Home</a>
+          <a href="#about">About</a>
+          <a href="#services">Services</a>
+          <a href="#portfolio">Portfolio</a>
+          <a href="#careers">Careers</a>
+          <a href="#contact">Contact</a>
+          <a href="#inquiry" class="btn btn-primary">Start a Project</a>
+        </div>
+      </div>
     </div>
   </nav>
 </header>
@@ -44,19 +45,21 @@
 
   <!-- HOME HERO SECTION -->
   <section id="hero" class="hero">
-    <div class="wrap hero-grid">
-      <div>
-        <div class="eyebrow">Software · Web · Mobile · Consulting · Security</div>
-        <h1>Systems your business can actually <span>run on.</span></h1>
-        <p class="hero-lede">Hepiga Technologies designs and builds software, websites, apps, and infrastructure that let growing businesses operate with confidence.</p>
-        <div class="hero-cta">
-          <a href="#inquiry" class="btn btn-amber">Start a project</a>
-          <a href="#portfolio" class="btn btn-ghost">See our work</a>
-        </div>
-        <div class="hero-stats">
-          <div class="stat"><div class="num">60+</div><div class="label">Projects shipped</div></div>
-          <div class="stat"><div class="num">98%</div><div class="label">Client retention</div></div>
-          <div class="stat"><div class="num">5</div><div class="label">Core disciplines</div></div>
+    <div class="container">
+      <div class="row hero-grid align-items-center gy-5">
+        <div class="col-lg-7">
+          <div class="eyebrow">Software · Web · Mobile · Consulting · Security</div>
+          <h1>Systems your business can actually <span>run on.</span></h1>
+          <p class="hero-lede">Hepiga Technologies designs and builds software, websites, apps, and infrastructure that let growing businesses operate with confidence.</p>
+          <div class="hero-cta">
+            <a href="#inquiry" class="btn btn-amber">Start a project</a>
+            <a href="#portfolio" class="btn btn-ghost">See our work</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat"><div class="num">60+</div><div class="label">Projects shipped</div></div>
+            <div class="stat"><div class="num">98%</div><div class="label">Client retention</div></div>
+            <div class="stat"><div class="num">5</div><div class="label">Core disciplines</div></div>
+          </div>
         </div>
       </div>
     </div>
@@ -64,65 +67,83 @@
 
   <!-- ABOUT SECTION -->
   <section id="about" class="bg-surface">
-    <div class="wrap about-lead">
-      <div>
-        <div class="eyebrow">Our Story</div>
-        <h2>Built by people who were tired of the handoff problem.</h2>
-        <p>Hepiga Technologies exists to close the gap between software development, design, and security operations. We work as a single team so the people who build your system are the same people who defend it.</p>
-        <div class="value-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 24px;">
-          <div class="value-card">
-            <h3>Accountable</h3>
-            <p>One point of contact from kickoff to launch.</p>
-          </div>
-          <div class="value-card">
-            <h3>Security-First</h3>
-            <p>Every build is designed to be defended from day one.</p>
+    <div class="container">
+      <div class="row about-lead gy-5">
+        <div class="col-lg-7">
+          <div class="eyebrow">Our Story</div>
+          <h2>Built by people who were tired of the handoff problem.</h2>
+          <p>Hepiga Technologies exists to close the gap between software development, design, and security operations. We work as a single team so the people who build your system are the same people who defend it.</p>
+          <div class="row value-grid gx-3 gy-3 mt-2">
+            <div class="col-sm-6">
+              <div class="value-card h-100">
+                <h3>Accountable</h3>
+                <p>One point of contact from kickoff to launch.</p>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="value-card h-100">
+                <h3>Security-First</h3>
+                <p>Every build is designed to be defended from day one.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="ceo-panel">
-        <div class="ceo-photo">
-          <img src="images/image.jpg" alt="Abigael Hepiga - Founder & CEO">
+        <div class="col-lg-5">
+          <div class="ceo-panel">
+            <div class="ceo-photo">
+              <img src="images/image.jpg" alt="Abigael Hepiga - Founder & CEO">
+            </div>
+            <h3>Abigael Hepiga</h3>
+            <span class="ceo-title">Founder &amp; CEO</span>
+            <p class="ceo-quote">"Good technology should be invisible when it works, and never negotiable when it comes to protecting your customers."</p>
+          </div>
         </div>
-        <h3>Abigael Hepiga</h3>
-        <span style="color: var(--accent); font-size: 0.85rem; font-weight: 600;">Founder &amp; CEO</span>
-        <p style="margin-top: 12px;">"Good technology should be invisible when it works, and never negotiable when it comes to protecting your customers."</p>
       </div>
     </div>
   </section>
 
   <!-- SERVICES SECTION -->
   <section id="services">
-    <div class="wrap">
+    <div class="container">
       <div class="section-head">
         <div class="eyebrow">What We Do</div>
         <h2>Five disciplines, one team.</h2>
       </div>
-      <div class="grid-services">
-        <div class="svc-card">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5 L2 12 L8 19 M16 5 L22 12 L16 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
-          <h3>Software Development</h3>
-          <p>Custom applications engineered around how your business operates.</p>
+      <div class="row grid-services g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card h-100">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M8 5 L2 12 L8 19 M16 5 L22 12 L16 19" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+            <h3>Software Development</h3>
+            <p>Custom applications engineered around how your business operates.</p>
+          </div>
         </div>
-        <div class="svc-card">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M2 8h20" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>Website Design</h3>
-          <p>Fast, accessible sites built to convert visitors into leads.</p>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card h-100">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="1" stroke="currentColor" stroke-width="1.6"/><path d="M2 8h20" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <h3>Website Design</h3>
+            <p>Fast, accessible sites built to convert visitors into leads.</p>
+          </div>
         </div>
-        <div class="svc-card">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>Mobile App Development</h3>
-          <p>Native and cross-platform apps for iOS and Android.</p>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card h-100">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><rect x="7" y="2" width="10" height="20" rx="2" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <h3>Mobile App Development</h3>
+            <p>Native and cross-platform apps for iOS and Android.</p>
+          </div>
         </div>
-        <div class="svc-card">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M12 18v3" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>IT Consulting</h3>
-          <p>Architecture, tooling, and technology spend guidance.</p>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card h-100">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M12 3v3M12 18v3" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <h3>IT Consulting</h3>
+            <p>Architecture, tooling, and technology spend guidance.</p>
+          </div>
         </div>
-        <div class="svc-card">
-          <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 6 V12 C21 17 17 20.5 12 22 C7 20.5 3 17 3 12 V6 Z" stroke="currentColor" stroke-width="1.6"/></svg></div>
-          <h3>Cybersecurity</h3>
-          <p>Audits, hardening, and 24/7 monitoring to protect customer data.</p>
+        <div class="col-md-6 col-lg-4">
+          <div class="svc-card h-100">
+            <div class="svc-icon"><svg viewBox="0 0 24 24" fill="none"><path d="M12 2 L21 6 V12 C21 17 17 20.5 12 22 C7 20.5 3 17 3 12 V6 Z" stroke="currentColor" stroke-width="1.6"/></svg></div>
+            <h3>Cybersecurity</h3>
+            <p>Audits, hardening, and 24/7 monitoring to protect customer data.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -130,7 +151,7 @@
 
   <!-- PORTFOLIO SECTION -->
   <section id="portfolio" class="bg-surface">
-    <div class="wrap">
+    <div class="container">
       <div class="section-head">
         <div class="eyebrow">Selected Work</div>
         <h2>Systems we've shipped.</h2>
@@ -144,26 +165,34 @@
         <button class="filter-btn" data-filter="security">Cybersecurity</button>
       </div>
 
-      <div class="work-grid">
-        <div class="work-card" data-category="software">
-          <span style="color:var(--accent); font-size:0.75rem; font-weight:600;">SOFTWARE</span>
-          <h3>Inventory &amp; fulfillment platform</h3>
-          <p>Warehouse management system replacing disconnected spreadsheets for retail distribution.</p>
+      <div class="row work-grid g-4">
+        <div class="col-md-6 col-lg-3" data-category="software">
+          <div class="work-card h-100">
+            <span class="work-tag">SOFTWARE</span>
+            <h3>Inventory &amp; fulfillment platform</h3>
+            <p>Warehouse management system replacing disconnected spreadsheets for retail distribution.</p>
+          </div>
         </div>
-        <div class="work-card" data-category="web">
-          <span style="color:var(--accent); font-size:0.75rem; font-weight:600;">WEB DESIGN</span>
-          <h3>Clinic booking &amp; marketing site</h3>
-          <p>Healthcare provider site optimized for online appointment bookings.</p>
+        <div class="col-md-6 col-lg-3" data-category="web">
+          <div class="work-card h-100">
+            <span class="work-tag">WEB DESIGN</span>
+            <h3>Clinic booking &amp; marketing site</h3>
+            <p>Healthcare provider site optimized for online appointment bookings.</p>
+          </div>
         </div>
-        <div class="work-card" data-category="mobile">
-          <span style="color:var(--accent); font-size:0.75rem; font-weight:600;">MOBILE APP</span>
-          <h3>Field service dispatch app</h3>
-          <p>iOS and Android app for offline-first dispatch logging.</p>
+        <div class="col-md-6 col-lg-3" data-category="mobile">
+          <div class="work-card h-100">
+            <span class="work-tag">MOBILE APP</span>
+            <h3>Field service dispatch app</h3>
+            <p>iOS and Android app for offline-first dispatch logging.</p>
+          </div>
         </div>
-        <div class="work-card" data-category="security">
-          <span style="color:var(--accent); font-size:0.75rem; font-weight:600;">CYBERSECURITY</span>
-          <h3>Security audit &amp; hardening</h3>
-          <p>Full infrastructure audit and compliance remediation for financial services.</p>
+        <div class="col-md-6 col-lg-3" data-category="security">
+          <div class="work-card h-100">
+            <span class="work-tag">CYBERSECURITY</span>
+            <h3>Security audit &amp; hardening</h3>
+            <p>Full infrastructure audit and compliance remediation for financial services.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -171,23 +200,29 @@
 
   <!-- CAREERS SECTION -->
   <section id="careers">
-    <div class="wrap">
+    <div class="container">
       <div class="section-head">
         <div class="eyebrow">Careers</div>
         <h2>Join Hepiga Technologies</h2>
       </div>
-      <div class="perks-grid">
-        <div class="perk-card">
-          <h3>Frontend Developer</h3>
-          <p>Engineering · Remote · Full-time</p>
+      <div class="row perks-grid g-4">
+        <div class="col-md-4">
+          <div class="perk-card h-100">
+            <h3>Frontend Developer</h3>
+            <p>Engineering · Remote · Full-time</p>
+          </div>
         </div>
-        <div class="perk-card">
-          <h3>Backend Developer</h3>
-          <p>Engineering · Remote · Full-time</p>
+        <div class="col-md-4">
+          <div class="perk-card h-100">
+            <h3>Backend Developer</h3>
+            <p>Engineering · Remote · Full-time</p>
+          </div>
         </div>
-        <div class="perk-card">
-          <h3>Cybersecurity Analyst</h3>
-          <p>Security · Hybrid · Full-time</p>
+        <div class="col-md-4">
+          <div class="perk-card h-100">
+            <h3>Cybersecurity Analyst</h3>
+            <p>Security · Hybrid · Full-time</p>
+          </div>
         </div>
       </div>
     </div>
@@ -195,67 +230,71 @@
 
   <!-- CONTACT SECTION -->
   <section id="contact" class="bg-surface">
-    <div class="wrap contact-grid">
-      <div>
-        <div class="eyebrow">Get In Touch</div>
-        <h2>Contact Information</h2>
-        <p><strong>Email:</strong> hello@hepigatech.com</p>
-        <p><strong>Phone:</strong> +63 917 234-0123</p>
-        <p><strong>Office:</strong> Cebu / Mandaue City, Philippines.</p>
-      </div>
+    <div class="container">
+      <div class="row contact-grid gy-5">
+        <div class="col-lg-6">
+          <div class="eyebrow">Get In Touch</div>
+          <h2>Contact Information</h2>
+          <p><strong>Email:</strong> hello@hepigatech.com</p>
+          <p><strong>Phone:</strong> +63 917 234-0123</p>
+          <p><strong>Office:</strong> Cebu / Mandaue City, Philippines.</p>
+        </div>
 
-      <div class="form-panel">
-        <h3>Send a message</h3>
-        <form>
-          <div class="field">
-            <label for="c-name">Full name *</label>
-            <input type="text" id="c-name" required>
+        <div class="col-lg-6">
+          <div class="form-panel">
+            <h3>Send a message</h3>
+            <form class="needs-validation" novalidate>
+              <div class="field">
+                <label for="c-name" class="form-label">Full name *</label>
+                <input type="text" id="c-name" class="form-control" required>
+              </div>
+              <div class="field">
+                <label for="c-email" class="form-label">Email address *</label>
+                <input type="email" id="c-email" class="form-control" required>
+              </div>
+              <div class="field">
+                <label for="c-message" class="form-label">Message *</label>
+                <textarea id="c-message" class="form-control" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+            </form>
           </div>
-          <div class="field">
-            <label for="c-email">Email address *</label>
-            <input type="email" id="c-email" required>
-          </div>
-          <div class="field">
-            <label for="c-message">Message *</label>
-            <textarea id="c-message" required></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
-        </form>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- INQUIRY SECTION -->
   <section id="inquiry">
-    <div class="wrap">
+    <div class="container">
       <div class="section-head">
         <div class="eyebrow">Start a Project</div>
         <h2>Tell us what you're building</h2>
       </div>
-      <div class="form-panel" style="max-width: 700px; margin: 0 auto;">
-        <form>
-          <div class="form-row">
-            <div class="field">
-              <label for="i-name">Full Name *</label>
-              <input type="text" id="i-name" required>
+      <div class="form-panel mx-auto" style="max-width: 700px;">
+        <form class="needs-validation" novalidate>
+          <div class="row form-row g-3">
+            <div class="col-md-6 field">
+              <label for="i-name" class="form-label">Full Name *</label>
+              <input type="text" id="i-name" class="form-control" required>
             </div>
-            <div class="field">
-              <label for="i-email">Email Address *</label>
-              <input type="email" id="i-email" required>
-            </div>
-          </div>
-          <div class="field">
-            <label>Services needed</label>
-            <div class="check-grid">
-              <label class="check-item"><input type="checkbox"> Software</label>
-              <label class="check-item"><input type="checkbox"> Web Design</label>
-              <label class="check-item"><input type="checkbox"> Mobile Apps</label>
-              <label class="check-item"><input type="checkbox"> Cybersecurity</label>
+            <div class="col-md-6 field">
+              <label for="i-email" class="form-label">Email Address *</label>
+              <input type="email" id="i-email" class="form-control" required>
             </div>
           </div>
           <div class="field">
-            <label for="i-details">Project Details *</label>
-            <textarea id="i-details" required></textarea>
+            <label class="form-label">Services needed</label>
+            <div class="row check-grid g-2">
+              <div class="col-sm-6"><label class="check-item"><input type="checkbox" class="form-check-input"> Software</label></div>
+              <div class="col-sm-6"><label class="check-item"><input type="checkbox" class="form-check-input"> Web Design</label></div>
+              <div class="col-sm-6"><label class="check-item"><input type="checkbox" class="form-check-input"> Mobile Apps</label></div>
+              <div class="col-sm-6"><label class="check-item"><input type="checkbox" class="form-check-input"> Cybersecurity</label></div>
+            </div>
+          </div>
+          <div class="field">
+            <label for="i-details" class="form-label">Project Details *</label>
+            <textarea id="i-details" class="form-control" required></textarea>
           </div>
           <button type="submit" class="btn btn-amber btn-block">Submit Inquiry</button>
         </form>
@@ -266,17 +305,17 @@
 </main>
 
 <footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
+  <div class="container">
+    <div class="row footer-grid gy-4">
+      <div class="col-lg-4 col-md-6">
         <a href="#hero" class="brand">
           <span>Hepiga Technologies</span>
         </a>
-        <p style="margin-top: 12px; font-size: 0.9rem;">Software, web, mobile, consulting, and cybersecurity — engineered by one accountable team.</p>
+        <p class="footer-desc">Software, web, mobile, consulting, and cybersecurity — engineered by one accountable team.</p>
       </div>
-      <div>
-        <p><strong>Navigation</strong></p>
-        <ul style="font-size: 0.9rem;">
+      <div class="col-lg-3 col-md-6">
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
           <li><a href="#about">About</a></li>
           <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
