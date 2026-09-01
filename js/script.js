@@ -19,19 +19,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
-  /* Portfolio filter */
+
+    /* Portfolio filter */
   var filterBtns = document.querySelectorAll('.filter-btn');
-  var workCards = document.querySelectorAll('.work-card');
-  if (filterBtns.length && workCards.length) {
+  // Select the outer column wrappers containing data-category attributes
+  var workCols = document.querySelectorAll('.work-grid > [data-category]');
+
+  if (filterBtns.length && workCols.length) {
     filterBtns.forEach(function (btn) {
       btn.addEventListener('click', function () {
         filterBtns.forEach(function (b) { b.classList.remove('active'); });
         btn.classList.add('active');
+        
         var filter = btn.getAttribute('data-filter');
-        workCards.forEach(function (card) {
-          var cat = card.getAttribute('data-category');
+        
+        workCols.forEach(function (col) {
+          var cat = col.getAttribute('data-category');
           var show = filter === 'all' || filter === cat;
-          card.style.display = show ? '' : 'none';
+          col.style.display = show ? '' : 'none';
         });
       });
     });
