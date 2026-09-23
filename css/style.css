@@ -123,6 +123,68 @@ section.bg-surface { background: var(--bg-surface); }
 .svc-icon svg { width: 100%; height: 100%; }
 .work-tag { color: var(--accent); font-size: .75rem; font-weight: 600; letter-spacing: .04em; }
 
+/* Clickable service cards */
+.svc-card {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  transition: border-color .2s, box-shadow .2s, transform .2s;
+}
+.svc-card:hover {
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.1);
+  transform: translateY(-2px);
+}
+.svc-card:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+.svc-more {
+  margin-top: auto;
+  padding-top: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: .74rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.svc-more-arrow { width: 14px; height: 14px; transition: transform .18s; }
+.svc-card:hover .svc-more-arrow { transform: translateX(3px); }
+
+/* Service detail modal */
+#serviceModal .modal-content {
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius);
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.18);
+}
+#serviceModal .modal-header {
+  border-bottom: none;
+  padding: 28px 28px 0;
+  align-items: flex-start;
+}
+.modal-svc-icon {
+  width: 44px; height: 44px;
+  color: var(--accent);
+}
+.modal-svc-icon svg { width: 100%; height: 100%; }
+#serviceModal .modal-body { padding: 16px 28px 4px; }
+#serviceModal .modal-title {
+  font-size: 1.5rem;
+  margin-bottom: .4em;
+}
+.modal-short {
+  color: var(--text-main);
+  font-weight: 500;
+}
+.modal-detail { color: var(--text-muted); }
+#serviceModal .modal-footer {
+  border-top: 1px solid var(--border-color);
+  padding: 20px 28px 28px;
+}
+#serviceModal .modal-footer .btn { width: 100%; }
+
 /* Hero */
 .hero { padding: 100px 0 80px; }
 .hero-stats { display: flex; gap: 32px; margin-top: 2.5em; padding-top: 1.8em; border-top: 1px solid var(--border-color); flex-wrap: wrap; }
